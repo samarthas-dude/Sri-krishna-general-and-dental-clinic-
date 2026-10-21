@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  
+  --color-gold-300: #e8d098;
+  --color-gold-400: #d8b76e;
+  --color-gold-500: #c8a24d;
+  --color-gold-600: #aa8233;
+  
+  --color-noir-950: #080706;
+  --color-noir-900: #0f0d0b;
+  --color-noir-850: #141210;
+  --color-noir-800: #1a1714;
+  --color-noir-700: #26221d;
+  --color-noir-600: #3a342d;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #0c0a09;
+    color: #e7e5e4;
+  }
+  
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0d0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a251e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8a24d;
+}
+
+/* Subtle glow animations */
+@keyframes luxuryPulse {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(1.05); }
+}
+
+.luxury-glow {
+  animation: luxuryPulse 8s ease-in-out infinite;
+}

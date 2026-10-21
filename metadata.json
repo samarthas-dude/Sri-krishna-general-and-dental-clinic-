@@ -1,0 +1,8 @@
+{
+  "name": "Sri Krishna General & Dental Clinic",
+  "description": "Modern luxury aesthetic and dental clinic in Attibele, Bengaluru. Advanced cosmetic dentistry, smile design, dental implants, medical aesthetics, and smart patient appointment scheduling with automated reminders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
